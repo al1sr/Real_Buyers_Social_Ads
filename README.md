@@ -3,6 +3,9 @@
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 ![Scikit_Learn](https://img.shields.io/badge/-Scikit_Learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)
 ![XGBoost](https://img.shields.io/badge/-XGBoost-EB6512?style=for-the-badge&logo=xgboost&logoColor=white)
+![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)
+![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white)
+![Seaborn](https://img.shields.io/badge/-Seaborn-4C72B0?style=for-the-badge&logo=python&logoColor=white)
 
 ## Description of the project
 This project focuses on data science and classification modeling applied to social media marketing campaigns. The main objective is to analyze user demographic indicators to predict purchasing behavior and heavily optimize targeting efficiency.
@@ -13,9 +16,9 @@ The analytical pipeline is specifically engineered to maximize the recall metric
 
 ## Technologies and libraries
 * **Python**: core programming language for predictive pipeline development.
-* **Scikit-learn**: machine learning framework used for preprocessing, scaling, baseline modeling, and validation.
+* **Scikit-learn**: machine learning framework used for preprocessing, feature scaling, model training, and validation scoring.
 * **XGBoost**: advanced gradient boosting library leveraged for high-performance classification.
-* **Pandas / NumPy**: libraries utilized for structured array management and local statistical aggregations.
+* **Pandas / NumPy**: libraries utilized for structured array management, matrix operations, and local statistical aggregations.
 * **Matplotlib / Seaborn**: visualization engines employed for behavioral plotting and validation analysis.
 
 ## Key analysis phases
@@ -25,12 +28,19 @@ The analytical pipeline is specifically engineered to maximize the recall metric
 * **Behavioral correlation**: profiling conversion rates against user profiles to identify distinct purchasing thresholds and patterns.
 
 ### 2. Preprocessing and structural preparation
-* **Feature scaling**: implementation of statistical standardization to adjust age and salary distributions for distance-based classification models.
-* **Validation partitioning**: structuring data splits into independent training and testing subsets to protect final evaluations against data leakage.
+* **Feature scaling**: implementation of standard scaling (`StandardScaler`) to adjust age and salary distributions, ensuring distance-based models are not statistically biased.
+* **Validation partitioning**: structuring data splits using stratified methods to protect final evaluations against data leakage.
 
-### 3. Model training and hyperparameter optimization
-* **Algorithm benchmarking**: initial training and evaluation of multiple classification paradigms including logistic regression, k-nearest neighbors, decision trees, and random forests.
-* **Recall maximization**: execution of hyperparameter search routines specifically configured to penalize missing true buyers and isolate statistical outliers.
+### 3. Model training and benchmark development
+* **Algorithmic diversification**: training and evaluation of baseline performance metrics across distinct mathematical paradigms:
+  * Linear models: logistic regression
+  * Distance-based models: k-nearest neighbors (KNN) and support vector machines (SVM)
+  * Tree-based models: decision trees and random forests
+  * Boosting architectures: XGBoost
+
+### 4. Hyperparameter optimization
+* **Grid search execution**: implementation of exhaustive parameter grids (`GridSearchCV`) across target estimators.
+* **Recall maximization**: cross-validation routines specifically configured to prioritize sensitivity scores, minimizing false negatives to retain target converting users.
 
 ## How to run it?
 1. Ensure you have **Python 3.x** installed along with a functional jupyter notebook environment.
