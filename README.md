@@ -38,3 +38,11 @@ The analytical pipeline is specifically engineered to maximize the recall metric
 3. Install the required dependencies via your terminal:
    ```bash
    pip install pandas numpy scikit-learn xgboost matplotlib seaborn notebook
+4. Launch the jupyter interface and run the Social_Ads_Recall.ipynb cells sequentially to replicate the pipeline.
+
+## Academic context
+This project was developed as part of the Supervised Learning and Classification modules of the master's degree, showcasing proficiency in operational target optimization, algorithmic benchmarking, and performance metric alignment.
+
+Developed by: Alicia Santamaría Román
+
+Contact: [LinkedIn](https://linkedin.com/in/aliciasantamariaroman)
